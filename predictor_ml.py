@@ -42,3 +42,4 @@ def predict_price_ml(symbol, market):
     predicted = model.predict(last_scaled)[0]
     current_price = df["Close"].iloc[-1]
     return round(float(predicted),2), round(float(current_price),2)
+
